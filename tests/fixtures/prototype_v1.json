@@ -1,0 +1,57 @@
+{
+ "version": 1,
+ "week": "2026-10-05",
+ "projects": [
+  {
+   "id": "pessoal",
+   "name": "Pessoal"
+  },
+  {
+   "id": "trabalho",
+   "name": "Trabalho"
+  }
+ ],
+ "tasks": [
+  {
+   "id": "v1t",
+   "projectId": "trabalho",
+   "week": "2026-10-05",
+   "title": "Contrato novo",
+   "description": "Primeira linha\nSegunda linha",
+   "urgency": "alta",
+   "progress": 20,
+   "createdAt": "2026-10-05T10:00:00.000Z",
+   "lastActivity": "2026-10-06T10:00:00.000Z",
+   "carries": 0,
+   "links": [
+    {
+     "url": "https://exemplo.com/minuta",
+     "label": "Minuta"
+    }
+   ],
+   "records": [
+    {
+     "id": "r1",
+     "at": "2026-10-05T11:00:00.000Z",
+     "text": "Cliente pediu ajustes",
+     "next": {
+      "text": "Enviar minuta",
+      "state": "pendente"
+     }
+    },
+    {
+     "id": "r2",
+     "at": "2026-10-05T12:00:00.000Z",
+     "text": "",
+     "next": {
+      "text": "Ligar para o cliente",
+      "state": "concluida"
+     },
+     "completedAt": "2026-10-06T09:00:00.000Z"
+    }
+   ]
+  }
+ ],
+ "events": [],
+ "snapshots": {}
+}

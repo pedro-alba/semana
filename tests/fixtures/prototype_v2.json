@@ -1,0 +1,142 @@
+{
+ "version": 2,
+ "demo": false,
+ "week": "2026-10-05",
+ "projects": [
+  {
+   "id": "pessoal",
+   "name": "Pessoal"
+  },
+  {
+   "id": "trabalho",
+   "name": "Trabalho"
+  }
+ ],
+ "tasks": [
+  {
+   "id": "t1",
+   "projectId": "pessoal",
+   "week": "2026-10-05",
+   "title": "Relatório do trimestre",
+   "description": "<p><strong>Rascunho</strong> pronto</p><script>alert(1)</script>",
+   "important": true,
+   "due": "2026-10-09",
+   "order": 0,
+   "progress": 40,
+   "createdAt": "2026-10-05T10:00:00.000Z",
+   "lastActivity": "2026-10-06T10:00:00.000Z",
+   "carries": 1,
+   "subtasks": [
+    {
+     "id": "s1",
+     "text": "Revisar números",
+     "done": false,
+     "createdAt": "2026-10-05T10:00:00.000Z",
+     "doneAt": ""
+    },
+    {
+     "id": "s2",
+     "text": "Juntar planilhas",
+     "done": true,
+     "createdAt": "2026-10-05T10:00:00.000Z",
+     "doneAt": "2026-10-06T10:00:00.000Z"
+    }
+   ],
+   "log": [
+    {
+     "id": "l1",
+     "at": "2026-10-05T10:00:00.000Z",
+     "kind": "system",
+     "text": "Transferida da semana de 28/09"
+    },
+    {
+     "id": "l2",
+     "at": "2026-10-06T10:00:00.000Z",
+     "kind": "note",
+     "text": "Falar com a Joana"
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "projectId": "pessoal",
+   "week": "2026-10-05",
+   "title": "Comprar presente",
+   "description": "",
+   "important": false,
+   "due": "",
+   "order": 1,
+   "progress": 100,
+   "createdAt": "2026-10-05T10:00:00.000Z",
+   "lastActivity": "2026-10-06T10:00:00.000Z",
+   "carries": 0,
+   "subtasks": [],
+   "log": []
+  },
+  {
+   "id": "t3",
+   "projectId": "trabalho",
+   "week": "2026-10-12",
+   "title": "Planejar oficina",
+   "description": "",
+   "important": false,
+   "due": "",
+   "order": 0,
+   "progress": 0,
+   "createdAt": "2026-10-05T10:00:00.000Z",
+   "lastActivity": "2026-10-06T10:00:00.000Z",
+   "carries": 0,
+   "subtasks": [],
+   "log": []
+  }
+ ],
+ "events": [
+  {
+   "id": "e1",
+   "title": "Aula de inglês",
+   "start": "2026-10-06T19:00",
+   "end": "2026-10-06T20:00",
+   "allDay": false,
+   "projectId": "pessoal",
+   "repeat": "weekly",
+   "until": "2099-12-31",
+   "description": "",
+   "location": ""
+  },
+  {
+   "id": "e2",
+   "title": "Feriado",
+   "start": "2026-10-12T00:00",
+   "end": "2026-10-13T00:00",
+   "allDay": true,
+   "projectId": "",
+   "repeat": "none",
+   "until": "",
+   "description": "",
+   "location": ""
+  }
+ ],
+ "notes": {
+  "2026-10-05|pessoal": "<p>Semana de <mark>fechamento</mark></p>"
+ },
+ "snapshots": {
+  "2026-09-28": [
+   {
+    "id": "t1",
+    "projectId": "pessoal",
+    "week": "2026-09-28",
+    "title": "Relatório do trimestre",
+    "description": "",
+    "important": false,
+    "due": "",
+    "order": 0,
+    "progress": 10,
+    "createdAt": "2026-10-05T10:00:00.000Z",
+    "lastActivity": "2026-10-06T10:00:00.000Z",
+    "carries": 0,
+    "subtasks": [],
+    "log": []
+   }
+  ]
+ }
+}

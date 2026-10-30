@@ -1,0 +1,207 @@
+[
+  {
+    "name": "p",
+    "input": "<p>Olá, semana</p>",
+    "output": "<p>Olá, semana</p>"
+  },
+  {
+    "name": "h2",
+    "input": "<h2>Título</h2>",
+    "output": "<h2>Título</h2>"
+  },
+  {
+    "name": "h3",
+    "input": "<h3>Subtítulo</h3>",
+    "output": "<h3>Subtítulo</h3>"
+  },
+  {
+    "name": "ul",
+    "input": "<ul><li>um</li><li>dois</li></ul>",
+    "output": "<ul><li>um</li><li>dois</li></ul>"
+  },
+  {
+    "name": "ol",
+    "input": "<ol><li>primeiro</li><li>segundo</li></ol>",
+    "output": "<ol><li>primeiro</li><li>segundo</li></ol>"
+  },
+  {
+    "name": "strong e b",
+    "input": "<p><strong>forte</strong> e <b>b</b></p>",
+    "output": "<p><strong>forte</strong> e <strong>b</strong></p>"
+  },
+  {
+    "name": "em e i",
+    "input": "<p><em>ênfase</em> e <i>i</i></p>",
+    "output": "<p><em>ênfase</em> e <em>i</em></p>"
+  },
+  {
+    "name": "mark",
+    "input": "<p>um <mark>grifo</mark> aqui</p>",
+    "output": "<p>um <mark>grifo</mark> aqui</p>"
+  },
+  {
+    "name": "a https",
+    "input": "<p>veja <a href=\"https://exemplo.com.br/x?y=1&amp;z=2\">o site</a></p>",
+    "output": "<p>veja <a href=\"https://exemplo.com.br/x?y=1&amp;z=2\">o site</a></p>"
+  },
+  {
+    "name": "br",
+    "input": "<p>linha<br>outra linha</p>",
+    "output": "<p>linha<br>outra linha</p>"
+  },
+  {
+    "name": "formatos aninhados",
+    "input": "<p><strong><em><mark>tudo</mark></em></strong> junto</p>",
+    "output": "<p><strong><em><mark>tudo</mark></em></strong> junto</p>"
+  },
+  {
+    "name": "script",
+    "input": "<p>a</p><script>alert(1)</script><p>b</p>",
+    "output": "<p>a</p><p>b</p>"
+  },
+  {
+    "name": "style",
+    "input": "<style>p{color:red}</style><p>x</p>",
+    "output": "<p>x</p>"
+  },
+  {
+    "name": "iframe",
+    "input": "<p>antes<iframe src=\"https://mal.example/\"></iframe> depois</p>",
+    "output": "<p>antes depois</p>"
+  },
+  {
+    "name": "img",
+    "input": "<p>foto <img src=\"x\" onerror=\"alert(1)\"> aqui</p>",
+    "output": "<p>foto  aqui</p>"
+  },
+  {
+    "name": "svg",
+    "input": "<p>a<svg onload=\"alert(1)\"><circle r=\"5\"></circle></svg>b</p>",
+    "output": "<p>ab</p>"
+  },
+  {
+    "name": "atributos on*",
+    "input": "<p onclick=\"alert(1)\" onmouseover=\"x()\">clique</p>",
+    "output": "<p>clique</p>"
+  },
+  {
+    "name": "atributo style",
+    "input": "<p style=\"color:red;font-size:30px\">colorido</p>",
+    "output": "<p>colorido</p>"
+  },
+  {
+    "name": "href javascript",
+    "input": "<p><a href=\"javascript:alert(1)\">link</a></p>",
+    "output": "<p>link</p>"
+  },
+  {
+    "name": "href data",
+    "input": "<p><a href=\"data:text/html;base64,PHNjcmlwdD4=\">dados</a></p>",
+    "output": "<p>dados</p>"
+  },
+  {
+    "name": "href vbscript",
+    "input": "<p><a href=\"vbscript:msgbox(1)\">vb</a></p>",
+    "output": "<p>vb</p>"
+  },
+  {
+    "name": "href javascript disfarçado",
+    "input": "<p><a href=\" JaVaScRiPt:alert(1)\">x</a></p>",
+    "output": "<p>x</p>"
+  },
+  {
+    "name": "href http",
+    "input": "<p><a href=\"http://exemplo.com/\">http</a></p>",
+    "output": "<p><a href=\"http://exemplo.com/\">http</a></p>"
+  },
+  {
+    "name": "href mailto",
+    "input": "<p><a href=\"mailto:ana@exemplo.com\">ana</a></p>",
+    "output": "<p><a href=\"mailto:ana@exemplo.com\">ana</a></p>"
+  },
+  {
+    "name": "href file",
+    "input": "<p><a href=\"file:///C:/Users/ana/Contrato%20final.pdf\">contrato</a></p>",
+    "output": "<p><a href=\"file:///C:/Users/ana/Contrato%20final.pdf\">contrato</a></p>"
+  },
+  {
+    "name": "href file de rede",
+    "input": "<p><a href=\"file://servidor/pasta/a.docx\">a.docx</a></p>",
+    "output": "<p><a href=\"file://servidor/pasta/a.docx\">a.docx</a></p>"
+  },
+  {
+    "name": "a com atributos extras",
+    "input": "<p><a href=\"https://x.com/\" target=\"_blank\" rel=\"noopener\" title=\"t\" class=\"c\">x</a></p>",
+    "output": "<p><a href=\"https://x.com/\">x</a></p>"
+  },
+  {
+    "name": "google docs",
+    "input": "<meta charset=\"utf-8\"><b style=\"font-weight:normal;\" id=\"docs-internal-guid-1a2b\"><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;\">Texto normal </span><span style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:#ffff00;font-weight:400;\">grifado</span><span style=\"font-size:14pt;font-family:Georgia;color:#ff0000;font-weight:700;\"> negrito vermelho</span></p></b>",
+    "output": "<p>Texto normal <mark>grifado</mark><strong> negrito vermelho</strong></p>"
+  },
+  {
+    "name": "google docs lista e título",
+    "input": "<b style=\"font-weight:normal;\" id=\"docs-internal-guid-3c4d\"><ul style=\"margin-top:0;margin-bottom:0;\"><li dir=\"ltr\" style=\"list-style-type:disc;font-size:11pt;\"><p dir=\"ltr\" role=\"presentation\"><span style=\"font-style:italic;color:#434343;\">item itálico</span></p></li><li dir=\"ltr\"><p dir=\"ltr\"><span style=\"font-weight:700;\">item forte</span></p></li></ul><h1 dir=\"ltr\"><span style=\"font-size:20pt;font-family:Arial;\">Seção</span></h1></b>",
+    "output": "<ul><li><em>item itálico</em></li><li><strong>item forte</strong></li></ul><h2>Seção</h2>"
+  },
+  {
+    "name": "span com fundo vira mark",
+    "input": "<p><span style=\"background-color: rgb(255, 242, 0);\">amarelo</span> <span style=\"background-color: white;\">branco</span></p>",
+    "output": "<p><mark>amarelo</mark> branco</p>"
+  },
+  {
+    "name": "listas aninhadas",
+    "input": "<ul><li>a<ul><li>b</li></ul></li><li>c</li></ul>",
+    "output": "<ul><li>a</li><li>b</li><li>c</li></ul>"
+  },
+  {
+    "name": "h1 e h4",
+    "input": "<h1>Grande</h1><h4>Pequeno</h4>",
+    "output": "<h2>Grande</h2><h3>Pequeno</h3>"
+  },
+  {
+    "name": "div dentro de div",
+    "input": "<div><div>dentro</div><div>outro</div></div>",
+    "output": "<p>dentro</p><p>outro</p>"
+  },
+  {
+    "name": "texto vazio",
+    "input": "",
+    "output": ""
+  },
+  {
+    "name": "só espaços",
+    "input": "   ",
+    "output": ""
+  },
+  {
+    "name": "parágrafo vazio",
+    "input": "<p><br></p>",
+    "output": ""
+  },
+  {
+    "name": "texto solto",
+    "input": "texto solto",
+    "output": "<p>texto solto</p>"
+  },
+  {
+    "name": "entidades",
+    "input": "<p>a &lt; b &amp; c &gt; d \"aspas\"</p>",
+    "output": "<p>a &lt; b &amp; c &gt; d \"aspas\"</p>"
+  },
+  {
+    "name": "comentário",
+    "input": "<p>a<!-- comentário -->b</p>",
+    "output": "<p>ab</p>"
+  },
+  {
+    "name": "tabela",
+    "input": "<table><tr><td>célula 1</td><td>célula 2</td></tr></table>",
+    "output": "<p>célula 1</p><p>célula 2</p>"
+  },
+  {
+    "name": "formulário",
+    "input": "<form action=\"https://mal.example/\"><input value=\"x\"><button>ok</button></form><p>fim</p>",
+    "output": "<p>fim</p>"
+  }
+]
