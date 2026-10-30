@@ -2,7 +2,7 @@
    /api responses do not go through here (their cache lives in IndexedDB, js/data.js), except images. */
 const CACHE='semana-static';
 self.addEventListener('install',e=>{
-  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['/','/app.css','/js/app.js','/js/pure.js','/js/data.js','/js/appearance.js','/js/i18n.js'])).then(()=>self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['/','/app.css','/favicon.svg','/js/app.js','/js/pure.js','/js/data.js','/js/appearance.js','/js/i18n.js'])).then(()=>self.skipWaiting()));
 });
 self.addEventListener('activate',e=>{e.waitUntil(self.clients.claim())});
 /* Images (008 R3): network first. Offline, the cached copy or, if not sent yet, the one in
